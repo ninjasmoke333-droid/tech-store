@@ -1,7 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import "tailwindcss";
+
+/* Your custom styles here if any */
 /* Fixed Navbar */
 * {
   margin: 0;
