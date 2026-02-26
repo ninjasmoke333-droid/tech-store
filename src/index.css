@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fixed Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Fixed height instead of auto */
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.navbar-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  order: -1;
+  flex-shrink: 0;
+}
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar h2 {
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  animation: colorShift 3s ease-in-out infinite;
+}
+
+.navbar-header-latest {
+  font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
+}
+
+@keyframes colorShift {
+  0% { color: rgb(249, 117, 83); }
+  33% { color: rgb(249, 229, 51); }
+  66% { color: rgb(83, 249, 117); }
+  100% { color: rgb(249, 117, 83); }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  transition: opacity 0.3s;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.content {
+  padding-top: calc(50vh + 100px); /* 50vh for video + navbar height */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-content {
+    padding: 0.6rem 1rem;
+  }
+
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .content {
+    padding-top: 150px; /* Increased */
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-content {
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  
+  .nav-links {
+    gap: 0.8rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 380px) {
+  .navbar {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .navbar-content {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+  }
+
+  .navbar-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+  
+  .nav-links {
+    gap: 0.5rem;
+  }
+}
+
+/* VideoComponent.css */
+
+
+.video-container {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+video {
+  display: block;           /* removes unwanted inline spacing */
+}
+
+/* Optional: better mobile experience */
+@media (max-width: 768px) {
+  video {
+    object-position: center 40%;   /* adjust crop focus if needed (e.g. more sky/person) */
+  }
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  padding-top: 145px; /* Reduced from 170px */
+  background: rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+}
+
+.content-overlay * {
+  pointer-events: auto;
+}
+
+.content-overlay h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.content-overlay p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.content-overlay img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/* Adjusted padding for different breakpoints */
+@media (max-width: 612px) {
+  .content-overlay {
+    padding-top: 155px; /* Reduced from 180px */
+  }
+}
+
+@media (max-width: 479px) {
+  .content-overlay {
+    padding-top: 130px; /* Reduced from 150px */
+  }
+}
+
+@media (max-width: 374px) {
+  .content-overlay {
+    padding-top: 120px; /* Reduced from 140px */
+  }
+}
+
+/* Extra small screens - 300px */
+@media (max-width: 320px) {
+  .content-overlay {
+    padding-top: 115px; /* Reduced from 130px */
+  }
+  
+  .content-overlay h1 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .navbar-content {
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  .navbar-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  
+  .nav-links {
+    gap: 0.4rem;
+  }
+  
+  .content-overlay {
+    padding: 10px;
+    padding-top: 105px; /* Reduced from 120px */
+  }
+  
+  .content-overlay h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+}
+
+.mobile-menu-overlay {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 
+    transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.45s ease;
+}
+
+
+.mobile-menu-overlay.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Helvetica Neue', sans-serif;
+}
