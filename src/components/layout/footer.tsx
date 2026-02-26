@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 // Define the props interface (this fixes type errors when passing isMobile)

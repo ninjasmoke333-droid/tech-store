@@ -1,5 +1,5 @@
 // src/components/shopping/checkout.tsx
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { useCart } from './../context/CartContext';
 import Navbar from './layout/navbar';
 import MobileMenu from './layout/mobilemenu';

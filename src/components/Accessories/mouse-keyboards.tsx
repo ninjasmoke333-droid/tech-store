@@ -1,5 +1,5 @@
 // src/components/MouseKeyboard/MouseKeyboard.tsx  (or wherever you want to place it)
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';

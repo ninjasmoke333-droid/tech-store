@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 import { ChevronRight, Menu, X, ShoppingBag, Search, ChevronLeft, Package, Mail, Phone as PhoneIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SearchDropdown from '../Searchdropdown';
