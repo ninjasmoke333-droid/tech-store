@@ -3,15 +3,8 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Xiaomi 15 Ultra images
-import xiaomi15ultra_1 from '../../assets/photos/xiaomi-17-ultra-1.jpg';
-import xiaomi15ultra_2 from '../../assets/photos/xiaomi-17-ultra-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite.jpg';
-import XiaomiUltraDisplay from '../../assets/photos/xiaomi-17-ultra-3.jpg';
-import LeicaQuadCamera from '../../assets/photos/xiaomi-17-ultra-4.jpg';
-import UltraBattery from '../../assets/photos/xiaomi15ultra-battery.jpg';
+
 import { useCart } from '../../context/CartContext';
 
 interface Product {
@@ -72,7 +65,7 @@ export default function XiaomiXiaomi17Ultra() {
       price: '$1,199.00',
       monthlyPrice: '$99.92',
       finishes: ['Black Ceramic', 'White Ceramic', 'Dragon Scale Titanium'],
-      image: xiaomi15ultra_1
+      image: '/assets/photos/xiaomi-17-ultra-1.jpg'
     },
     {
       id: 2,
@@ -93,7 +86,7 @@ export default function XiaomiXiaomi17Ultra() {
       price: '$1,299.00',
       monthlyPrice: '$108.25',
       finishes: ['Black Ceramic', 'White Ceramic', 'Dragon Scale Titanium'],
-      image: xiaomi15ultra_1
+      image: '/assets/photos/xiaomi-17-ultra-1.jpg'
     },
     {
       id: 3,
@@ -114,7 +107,7 @@ export default function XiaomiXiaomi17Ultra() {
       price: '$1,399.00',
       monthlyPrice: '$116.58',
       finishes: ['Black Ceramic', 'White Ceramic', 'Dragon Scale Titanium'],
-      image: xiaomi15ultra_2
+      image: '/assets/photos/xiaomi-17-ultra-2.jpg'
     }
   ];
 
@@ -128,7 +121,7 @@ export default function XiaomiXiaomi17Ultra() {
         'Advanced NPU for real-time AI photography & features',
         'Large vapor chamber cooling for sustained power'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '6.73-inch LTPO AMOLED 2K Display',
@@ -139,7 +132,7 @@ export default function XiaomiXiaomi17Ultra() {
         'HDR10+ and Dolby Vision support',
         'Ultra-thin bezels with curved ceramic glass'
       ],
-      image: XiaomiUltraDisplay
+      image: '/assets/photos/xiaomi-17-ultra-3.jpg'
     },
     {
       title: 'Leica Quad Camera System (1-inch + 200MP Periscope)',
@@ -150,7 +143,7 @@ export default function XiaomiXiaomi17Ultra() {
         'Leica Summilux lens & authentic color science',
         '8K video, AI enhancements, extreme low-light performance'
       ],
-      image: LeicaQuadCamera
+      image: '/assets/photos/xiaomi-17-ultra-4.jpg'
     },
     {
       title: '6100mAh Battery & Hyper-Fast Charging',
@@ -161,7 +154,7 @@ export default function XiaomiXiaomi17Ultra() {
         '80W wireless charging support',
         'Reverse wireless charging capability'
       ],
-      image: UltraBattery
+      image: '/assets/photos/xiaomi15ultra-battery.jpg'
     }
   ];
 

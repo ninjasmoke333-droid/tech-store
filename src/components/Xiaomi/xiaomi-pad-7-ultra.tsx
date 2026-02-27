@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Xiaomi Pad 7 Ultra images
-import pad7ultra_1 from '../../assets/photos/xiaomi-pad7ultra-1.jpg';
-import pad7ultra_2 from '../../assets/photos/xiaomi-pad7ultra-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite.jpg';
-import Pad7Display from '../../assets/photos/pad7ultra-display.jpg';
-import XiaomiStylus from '../../assets/photos/pad7ultra-stylus.jpg';
-import Pad7Battery from '../../assets/photos/pad7ultra-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +65,7 @@ export default function XiaomiXiaomiPad7Ultra() {
       price: '$899.00',
       monthlyPrice: '$74.92',
       finishes: ['Black', 'White', 'Green'],
-      image: pad7ultra_1
+      image: '/assets/photos/xiaomi-pad7ultra-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +86,7 @@ export default function XiaomiXiaomiPad7Ultra() {
       price: '$999.00',
       monthlyPrice: '$83.25',
       finishes: ['Black', 'White', 'Green'],
-      image: pad7ultra_1
+      image: '/assets/photos/xiaomi-pad7ultra-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +107,7 @@ export default function XiaomiXiaomiPad7Ultra() {
       price: '$1,099.00',
       monthlyPrice: '$91.58',
       finishes: ['Black', 'White', 'Green'],
-      image: pad7ultra_2
+      image: '/assets/photos/xiaomi-pad7ultra-2.jpg'
     }
   ];
 
@@ -129,7 +121,7 @@ export default function XiaomiXiaomiPad7Ultra() {
         'Advanced NPU for on-device AI features',
         'Large vapor chamber cooling for sustained use'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '13.2-inch LTPO OLED 3.2K Display',
@@ -140,7 +132,7 @@ export default function XiaomiXiaomiPad7Ultra() {
         'Dolby Vision & HDR10+ support',
         'Ultra-thin bezels with 3:2 productivity ratio'
       ],
-      image: Pad7Display
+      image: '/assets/photos/pad7ultra-display.jpg'
     },
     {
       title: 'Xiaomi Smart Pen 2 & Multitasking',
@@ -151,7 +143,7 @@ export default function XiaomiXiaomiPad7Ultra() {
         'HyperOS 2.0 with AI productivity tools',
         'Optimized for drawing, note-taking & editing'
       ],
-      image: XiaomiStylus
+      image: '/assets/photos/pad7ultra-stylus.jpg'
     },
     {
       title: '12000mAh Battery & Hyper-Fast Charging',
@@ -162,7 +154,7 @@ export default function XiaomiXiaomiPad7Ultra() {
         '50W wireless charging support',
         'Efficient power management with Snapdragon 8 Elite'
       ],
-      image: Pad7Battery
+      image: '/assets/photos/pad7ultra-battery.jpg'
     }
   ];
 
