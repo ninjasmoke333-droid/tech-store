@@ -1334,7 +1334,7 @@ const TechStoreLanding: React.FC = () => {
       <section
         style={{
   position: 'relative',
-  backgroundImage: `url('/assets/photos/smart-watch-photo-1.jpg') center / cover no-repeat`,
+  background: `url('/assets/photos/smart-watch-photo-1.jpg') center / cover no-repeat`,
   color: '#ffffff',
   minHeight: isMobile ? '600px' : '700px',
   display: 'flex',

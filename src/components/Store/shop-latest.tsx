@@ -45,7 +45,7 @@ const AppleStoreInspired = () => {
       price: 'From $1099',
 
       gradient: 'linear-gradient(135deg, #1e1e1e 0%, #3a3a3a 100%)',
-      image: '/src/assets/photos/xiaomi-17-ultra-4.jpg',
+      image: '/assets/photos/xiaomi-17-ultra-4.jpg',
       link: '/xiaomi/xiaomi-17-ultra',
     },
     {
@@ -54,7 +54,7 @@ const AppleStoreInspired = () => {
       price: 'From $1599',
 
       gradient: 'linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%)',
-      image: '/src/assets/photos/blade-18-1.png',
+      image: '/assets/photos/blade-18-1.png',
       link: '/razer/razerblade-18',
     },
     {
@@ -63,7 +63,7 @@ const AppleStoreInspired = () => {
       price: 'From $999',
 
       gradient: 'linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%)',
-      image: '/src/assets/photos/one-plus-pad-3.jpg',
+      image: '/assets/photos/one-plus-pad-3.jpg',
       link: '/oneplus/oneplus-pad-3',
     },
     {
