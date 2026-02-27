@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Galaxy Watch 8 images
-import watch8_40mm from '../../assets/photos/galaxy-watch8-40mm.jpg';
-import watch8_44mm from '../../assets/photos/galaxy-watch8-44mm.jpg';
 
-// Consideration images (replace with real shots)
-import ExynosChip from '../../assets/photos/exynos-w1000.jpg';
-import WatchDisplay from '../../assets/photos/watch8-display.jpg';
-import HealthTracking from '../../assets/photos/watch8-health.png';
-import BatteryWatch from '../../assets/photos/watch8-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +65,7 @@ export default function SamsungWatch8() {
       price: '$349.00',
       monthlyPrice: '$29.08',
       finishes: ['Graphite', 'Silver'],
-      image: watch8_40mm
+      image: '/assets/photos/galaxy-watch8-40mm.jpg'
     },
     {
       id: 2,
@@ -94,7 +86,7 @@ export default function SamsungWatch8() {
       price: '$379.00',
       monthlyPrice: '$31.58',
       finishes: ['Graphite', 'Silver'],
-      image: watch8_44mm
+      image: '/assets/photos/galaxy-watch8-44mm.jpg'
     }
   ];
 
@@ -108,7 +100,7 @@ export default function SamsungWatch8() {
         'Optimized for advanced health insights',
         'Seamless integration with Galaxy ecosystem'
       ],
-      image: ExynosChip
+      image: '/assets/photos/exynos-w1000.jpg'
     },
     {
       title: 'Super AMOLED Display',
@@ -119,7 +111,7 @@ export default function SamsungWatch8() {
         '1.34-inch (40mm) or 1.47-inch (44mm)',
         'Full-color Always On Display support'
       ],
-      image: WatchDisplay
+      image: '/assets/photos/watch8-display.jpg'
     },
     {
       title: 'Advanced Health & Fitness Tracking',
@@ -130,7 +122,7 @@ export default function SamsungWatch8() {
         'Heart rate, ECG, blood oxygen monitoring',
         'Energy Score for daily wellness overview'
       ],
-      image: HealthTracking
+      image: '/assets/photos/watch8-health.png'
     },
     {
       title: 'All-Day Battery & Durability',
@@ -141,7 +133,7 @@ export default function SamsungWatch8() {
         'IP68 + 5ATM water resistance',
         'MIL-STD-810H certified durability'
       ],
-      image: BatteryWatch
+      image: '/assets/photos/watch8-battery.jpg'
     }
   ];
 

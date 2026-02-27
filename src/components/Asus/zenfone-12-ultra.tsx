@@ -3,15 +3,11 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual ASUS Zenfone 12 Ultra images
-import zenfone12ultra_1 from '../../assets/photos/zenfone-12-ultra-1.jpg';
-import zenfone12ultra_2 from '../../assets/photos/zenfone-12-ultra-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite.jpg';
-import ZenfoneDisplay from '../../assets/photos/zenfone12ultra-display.jpg';
-import ZenfoneCamera from '../../assets/photos/zenfone12ultra-camera.jpg';
-import ZenfoneBattery from '../../assets/photos/zenfone12ultra-battery.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +69,7 @@ export default function AsusZenfone12Ultra() {
       price: '$849.00',
       monthlyPrice: '$70.75',
       finishes: ['Midnight Black', 'Glacier Silver', 'Aurora Blue'],
-      image: zenfone12ultra_1
+      image: '/assets/photos/zenfone-12-ultra-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +90,7 @@ export default function AsusZenfone12Ultra() {
       price: '$949.00',
       monthlyPrice: '$79.08',
       finishes: ['Midnight Black', 'Glacier Silver', 'Aurora Blue'],
-      image: zenfone12ultra_1
+      image: '/assets/photos/zenfone-12-ultra-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +111,7 @@ export default function AsusZenfone12Ultra() {
       price: '$999.00',
       monthlyPrice: '$83.25',
       finishes: ['Midnight Black', 'Glacier Silver', 'Aurora Blue'],
-      image: zenfone12ultra_2
+      image: '/assets/photos/zenfone-12-ultra-2.jpg'
     }
   ];
 
@@ -129,7 +125,7 @@ export default function AsusZenfone12Ultra() {
         'Powerful NPU for on-device AI features',
         'Advanced thermal management for sustained use'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '6.78-inch LTPO AMOLED Display',
@@ -140,7 +136,7 @@ export default function AsusZenfone12Ultra() {
         'HDR10+ support & eye-care modes',
         'Ultra-thin bezels with premium feel'
       ],
-      image: ZenfoneDisplay
+      image: '/assets/photos/zenfone12ultra-display.jpg'
     },
     {
       title: 'Triple Camera System',
@@ -151,7 +147,7 @@ export default function AsusZenfone12Ultra() {
         'AI scene enhancement & night mode',
         'High-quality selfies with 32MP front camera'
       ],
-      image: ZenfoneCamera
+      image: '/assets/photos/zenfone12ultra-camera.jpg'
     },
     {
       title: '5500mAh Battery & Fast Charging',
@@ -162,7 +158,7 @@ export default function AsusZenfone12Ultra() {
         '15W wireless charging support',
         'Efficient power management with Snapdragon 8 Elite'
       ],
-      image: ZenfoneBattery
+      image: '/assets/photos/zenfone12ultra-battery.jpg'
     }
   ];
 

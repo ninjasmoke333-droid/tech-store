@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Galaxy Tab S11 Ultra images
-import tabS11Ultra1 from '../../assets/photos/tab-s11-ultra-1.jpg';
-import tabS11Ultra2 from '../../assets/photos/tab-s11-ultra-2.jpg';
 
-// Consideration images (replace with real shots)
-import DimensityChip from '../../assets/photos/dimensity-9400-plus.jpg';
-import TabDisplay from '../../assets/photos/tab-s11-display.jpg';
-import SPenTablet from '../../assets/photos/tab-s11-spen.jpg';
-import TabBattery from '../../assets/photos/tab-s11-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -75,7 +67,7 @@ export default function SamsungTabS11Ultra() {
       price: '$1,199.00',
       monthlyPrice: '$99.92',
       finishes: ['Gray', 'Silver'],
-      image: tabS11Ultra1
+      image: '/assets/photos/tab-s11-ultra-1.jpg'
     },
     {
       id: 2,
@@ -96,7 +88,7 @@ export default function SamsungTabS11Ultra() {
       price: '$1,319.99',
       monthlyPrice: '$110.00',
       finishes: ['Gray', 'Silver'],
-      image: tabS11Ultra1
+      image: '/assets/photos/tab-s11-ultra-1.jpg'
     },
     {
       id: 3,
@@ -117,7 +109,7 @@ export default function SamsungTabS11Ultra() {
       price: '$1,619.99',
       monthlyPrice: '$135.00',
       finishes: ['Gray', 'Silver'],
-      image: tabS11Ultra2
+      image: '/assets/photos/tab-s11-ultra-2.jpg'
     }
   ];
 
@@ -131,7 +123,7 @@ export default function SamsungTabS11Ultra() {
         'Smooth gaming and productivity performance',
         'Improved power management for all-day use'
       ],
-      image: DimensityChip
+      image: '/assets/photos/dimensity-9400-plus.jpg'
     },
     {
       title: '14.6-inch Dynamic AMOLED 2X display',
@@ -142,7 +134,7 @@ export default function SamsungTabS11Ultra() {
         'HDR support and high peak brightness',
         'Super-slim bezels for immersive viewing'
       ],
-      image: TabDisplay
+      image: '/assets/photos/tab-s11-display.jpg'
     },
     {
       title: 'Included S Pen',
@@ -153,7 +145,7 @@ export default function SamsungTabS11Ultra() {
         'Seamless integration with note-taking apps',
         'Perfect for creative work and productivity'
       ],
-      image: SPenTablet
+      image: '/assets/photos/tab-s11-spen.jpg'
     },
     {
       title: 'Long-lasting battery & pro features',
@@ -164,7 +156,7 @@ export default function SamsungTabS11Ultra() {
         'Dual rear cameras with ultra-wide lens',
         'Wi-Fi 7, Samsung DeX, and IP68 durability'
       ],
-      image: TabBattery
+      image: '/assets/photos/tab-s11-battery.jpg'
     }
   ];
 

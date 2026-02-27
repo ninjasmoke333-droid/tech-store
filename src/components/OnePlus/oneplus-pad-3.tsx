@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual OnePlus Pad 3 images
-import pad3_1 from '../../assets/photos/oneplus-pad3-1.jpg';
-import pad3_2 from '../../assets/photos/oneplus-pad3-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite-2.jpg';
-import PadDisplay from '../../assets/photos/pad3-display.jpg';
-import StylusSupport from '../../assets/photos/pad3-stylus.png';
-import PadBattery from '../../assets/photos/pad3-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +65,7 @@ export default function OnePlusOnePlusPad3() {
       price: '$699.00',
       monthlyPrice: '$58.25',
       finishes: ['Storm Blue', 'Frosted Silver'],
-      image: pad3_1
+      image: '/assets/photos/oneplus-pad3-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +86,7 @@ export default function OnePlusOnePlusPad3() {
       price: '$749.00',
       monthlyPrice: '$62.42',
       finishes: ['Storm Blue', 'Frosted Silver'],
-      image: pad3_1
+      image: '/assets/photos/oneplus-pad3-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +107,7 @@ export default function OnePlusOnePlusPad3() {
       price: '$849.00',
       monthlyPrice: '$70.75',
       finishes: ['Storm Blue', 'Frosted Silver'],
-      image: pad3_2
+      image: '/assets/photos/oneplus-pad3-2.jpg'
     }
   ];
 
@@ -129,7 +121,7 @@ export default function OnePlusOnePlusPad3() {
         'LPDDR5X RAM & UFS 4.0 storage',
         'Advanced thermal management for sustained performance'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite-2.jpg'
     },
     {
       title: '13.2-inch 3.4K Display',
@@ -140,7 +132,7 @@ export default function OnePlusOnePlusPad3() {
         '7:5 aspect ratio for immersive viewing',
         '12-bit color depth for accurate visuals'
       ],
-      image: PadDisplay
+      image: '/assets/photos/pad3-display.jpg'
     },
     {
       title: 'Stylus & Multitasking Support',
@@ -151,7 +143,7 @@ export default function OnePlusOnePlusPad3() {
         'OxygenOS 15 with AI-enhanced tools',
         'Optimized for drawing, editing, and desktop-like use'
       ],
-      image: StylusSupport
+      image: '/assets/photos/pad3-stylus.png'
     },
     {
       title: 'Massive Battery & Fast Charging',
@@ -162,7 +154,7 @@ export default function OnePlusOnePlusPad3() {
         'Up to 18 hours video playback',
         'Efficient power management with Snapdragon 8 Elite'
       ],
-      image: PadBattery
+      image: '/assets/photos/pad3-battery.jpg'
     }
   ];
 

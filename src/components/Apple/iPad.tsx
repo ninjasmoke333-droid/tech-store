@@ -4,15 +4,11 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual iPad Pro images
-import iPadPro1 from '../../assets/photos/ipad-pro-1.jpg';
-import iPadPro2 from '../../assets/photos/ipad-pro-2.jpg';
 
-// Consideration images
-import M5chip from '../../assets/photos/ipad-m5.jpg';
-import iPadDisplay from '../../assets/photos/m5-display.jpg';
-import iPadPencil from '../../assets/photos/ipad-pencil.jpg';
-import iPadBattery from '../../assets/photos/ipad-batt.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';     // ← adjust path if needed
 
@@ -73,7 +69,7 @@ export default function AppleiPadPro() {
       price: '$1,299.00',
       monthlyPrice: '$108.25',
       finishes: ['Silver', 'Space Black'],
-      image: iPadPro1
+      image: '/assets/photos/ipad-pro-1.jpg'
     },
     {
       id: 2,
@@ -93,7 +89,7 @@ export default function AppleiPadPro() {
       price: '$1,499.00',
       monthlyPrice: '$124.92',
       finishes: ['Silver', 'Space Black'],
-      image: iPadPro1
+      image: '/assets/photos/ipad-pro-1.jpg'
     },
     {
       id: 3,
@@ -113,7 +109,7 @@ export default function AppleiPadPro() {
       price: '$1,899.00',
       monthlyPrice: '$158.25',
       finishes: ['Silver', 'Space Black'],
-      image: iPadPro2
+      image: '/assets/photos/ipad-pro-2.jpg'
     },
     {
       id: 4,
@@ -132,7 +128,7 @@ export default function AppleiPadPro() {
       price: '$2,299.00',
       monthlyPrice: '$191.58',
       finishes: ['Silver', 'Space Black'],
-      image: iPadPro2
+      image: '/assets/photos/ipad-pro-2.jpg'
     }
   ];
 
@@ -146,7 +142,7 @@ export default function AppleiPadPro() {
         '16-core Neural Engine for advanced on-device AI',
         '153GB/s unified memory bandwidth for seamless multitasking'
       ],
-      image: M5chip
+      image: '/assets/photos/ipad-m5.jpg'
     },
     {
       title: 'Ultra Retina XDR display',
@@ -157,7 +153,7 @@ export default function AppleiPadPro() {
         '2,000,000:1 contrast ratio for deeper blacks',
         'ProMotion up to 120Hz and nano-texture glass option'
       ],
-      image: iPadDisplay
+      image: '/assets/photos/m5-display.jpg'
     },
     {
       title: 'Apple Pencil Pro support',
@@ -168,7 +164,7 @@ export default function AppleiPadPro() {
         'Hover for preview before you mark',
         'Works seamlessly with iPadOS 26 features'
       ],
-      image: iPadPencil
+      image: '/assets/photos/ipad-pencil.jpg'
     },
     {
       title: 'All-day battery and connectivity',
@@ -179,7 +175,7 @@ export default function AppleiPadPro() {
         'Wi-Fi 7 and Bluetooth 6 for faster connections',
         'Thread support for smart home integration'
       ],
-      image: iPadBattery
+      image: '/assets/photos/ipad-batt.jpg'
     }
   ];
 

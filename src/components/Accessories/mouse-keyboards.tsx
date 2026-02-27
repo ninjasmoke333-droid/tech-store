@@ -5,16 +5,16 @@ import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
 // Replace these paths with your actual product images
-import viperV3Pro from '../../assets/photos/razer-viper-v3-pro.jpg';
-import corsairK100 from '../../assets/photos/corsair-k100-rgb.jpg';
-import mxMaster4s from '../../assets/photos/logitech-mx-master-4s.jpg';
-import keychronQ1Pro from '../../assets/photos/keychron-q1-pro.jpg';
+
+
+
+
 
 // Optional consideration images (replace with real ones if you have them)
-import highDpiSensor from '../../assets/photos/high-dpi-gaming-sensor.jpg';
-import opticalSwitches from '../../assets/photos/optical-mechanical-switches.jpg';
-import ergonomicMouse from '../../assets/photos/ergonomic-productivity-mouse.jpg';
-import customizableKeyboard from '../../assets/photos/customizable-mechanical-keyboard.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -84,7 +84,7 @@ export default function AccessoriesMouseKeyboards() {
       price: '$159.99',
       monthlyPrice: '$13.33',
       colors: ['Black', 'White'],
-      image: viperV3Pro
+      image: '/assets/photos/razer-viper-v3-pro.jpg'
     },
     {
       id: 2,
@@ -105,7 +105,7 @@ export default function AccessoriesMouseKeyboards() {
       price: '$229.99',
       monthlyPrice: '$19.17',
       colors: ['Black', 'White'],
-      image: corsairK100
+      image: '/assets/photos/corsair-k100-rgb.jpg'
     },
     {
       id: 3,
@@ -126,7 +126,7 @@ export default function AccessoriesMouseKeyboards() {
       price: '$119.99',
       monthlyPrice: '$10.00',
       colors: ['Graphite', 'Pale Gray'],
-      image: mxMaster4s
+      image: '/assets/photos/logitech-mx-master-4s.jpg'
     },
     {
       id: 4,
@@ -147,7 +147,7 @@ export default function AccessoriesMouseKeyboards() {
       price: '$199.00',
       monthlyPrice: '$16.58',
       colors: ['Carbon Black', 'Shell White', 'Navy Blue'],
-      image: keychronQ1Pro
+      image: '/assets/photos/keychron-q1-pro.jpg'
     }
   ];
 
@@ -161,7 +161,7 @@ export default function AccessoriesMouseKeyboards() {
         'Surface calibration & smart tracking',
         'Low latency wireless'
       ],
-      image: highDpiSensor
+      image: '/assets/photos/high-dpi-gaming-sensor.jpg'
     },
     {
       title: 'Optical & Mechanical Switches',
@@ -172,7 +172,7 @@ export default function AccessoriesMouseKeyboards() {
         'Linear, tactile, or clicky options',
         '90–100 million click lifespan'
       ],
-      image: opticalSwitches
+      image: '/assets/photos/optical-mechanical-switches.jpg'
     },
     {
       title: 'Ergonomics & Comfort',
@@ -183,7 +183,7 @@ export default function AccessoriesMouseKeyboards() {
         'Memory foam wrist rests',
         'Adjustable weight & balance'
       ],
-      image: ergonomicMouse
+      image: '/assets/photos/ergonomic-productivity-mouse.jpg'
     },
     {
       title: 'Customization & RGB',
@@ -194,7 +194,7 @@ export default function AccessoriesMouseKeyboards() {
         'Macro recording & remapping',
         'Synapse / iCUE / VIA support'
       ],
-      image: customizableKeyboard
+      image: '/assets/photos/customizable-mechanical-keyboard.jpg'
     }
   ];
 

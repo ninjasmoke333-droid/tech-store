@@ -4,17 +4,11 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// Replace these paths with your actual product images
-import raybanMeta from '../../assets/photos/ray-ban-meta-smart-glasses.jpg';
-import xrealAir2 from '../../assets/photos/xreal-air-2-ultra.jpg';
-import appleVisionPro from '../../assets/photos/apple-vision-pro.jpg';
-import metaQuest3 from '../../assets/photos/meta-quest-3.jpg';
 
-// Optional consideration images (replace with real ones if you have them)
-import arOverlay from '../../assets/photos/ar-overlay-experience.jpg';
-import spatialComputing from '../../assets/photos/spatial-computing.jpg';
-import lightweightDesign from '../../assets/photos/lightweight-smart-glasses.jpg';
-import immersiveVR from '../../assets/photos/immersive-vr-world.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -83,7 +77,7 @@ export default function AccessoriesSmartglasses() {
       price: '$299.00',
       monthlyPrice: '$24.92',
       colors: ['Gloss Black', 'Shiny Transparent', 'Wayfarer Matte Black'],
-      image: raybanMeta
+      image: '/assets/photos/ray-ban-meta-smart-glasses.jpg'
     },
     {
       id: 2,
@@ -104,7 +98,7 @@ export default function AccessoriesSmartglasses() {
       price: '$699.00',
       monthlyPrice: '$58.25',
       colors: ['Black'],
-      image: xrealAir2
+      image: '/assets/photos/xreal-air-2-ultra.jpg'
     },
     {
       id: 3,
@@ -125,7 +119,7 @@ export default function AccessoriesSmartglasses() {
       price: '$3,499.00',
       monthlyPrice: '$291.58',
       colors: ['Space Gray'],
-      image: appleVisionPro
+      image: '/assets/photos/apple-vision-pro.jpg'
     },
     {
       id: 4,
@@ -146,7 +140,7 @@ export default function AccessoriesSmartglasses() {
       price: '$499.99',
       monthlyPrice: '$41.67',
       colors: ['White'],
-      image: metaQuest3
+      image: '/assets/photos/meta-quest-3.jpg'
     }
   ];
 
@@ -160,7 +154,7 @@ export default function AccessoriesSmartglasses() {
         'Spatial anchors & persistent objects',
         'Works with phones, laptops, or standalone'
       ],
-      image: arOverlay
+      image: '/assets/photos/ar-overlay-experience.jpg'
     },
     {
       title: 'Immersive VR & Mixed Reality',
@@ -171,7 +165,7 @@ export default function AccessoriesSmartglasses() {
         'Inside-out tracking (no base stations)',
         'Huge app & game ecosystem'
       ],
-      image: immersiveVR
+      image: '/assets/photos/immersive-vr-world.jpg'
     },
     {
       title: 'Lightweight & Everyday Wearable',
@@ -182,7 +176,7 @@ export default function AccessoriesSmartglasses() {
         'Open-ear audio or private speakers',
         'All-day battery in smart models'
       ],
-      image: lightweightDesign
+      image: '/assets/photos/lightweight-smart-glasses.jpg'
     },
     {
       title: 'AI & Smart Features',
@@ -193,7 +187,7 @@ export default function AccessoriesSmartglasses() {
         'Camera + AI for contextual help',
         'Seamless phone integration'
       ],
-      image: spatialComputing
+      image: '/assets/photos/spatial-computing.jpg'
     }
   ];
 

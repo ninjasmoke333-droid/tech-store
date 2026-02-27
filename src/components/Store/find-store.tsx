@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import TechStoreVid from '../../assets/store-vid.mp4';
+
 import SearchDropdown from '../Searchdropdown';
 
 // Fix Leaflet default marker icon issue
@@ -887,7 +887,7 @@ const FindStore = () => {
         objectFit: 'cover',
       }}
     >
-      <source src={TechStoreVid} type="video/mp4" />
+      <source src='/assets/store-vid.mp4' type="video/mp4" />
     </video>
   </div>
 

@@ -5,16 +5,16 @@ import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
 // Replace these paths with your actual headphone images
-import sonyXM5 from '../../assets/photos/sony-wh-1000xm5.jpg';
-import steelseriesNova from '../../assets/photos/steelseries-arctis-nova-pro.jpg';
-import airpodsPro from '../../assets/photos/airpods-pro-2.jpg';
-import sennheiserMomentum from '../../assets/photos/sennheiser-momentum-4.jpg';
+
+
+
+
 
 // Optional consideration images (replace with real ones if you have them)
-import ancTech from '../../assets/photos/active-noise-cancellation.jpg';
-import spatialAudio from '../../assets/photos/spatial-audio.jpg';
-import batteryLife from '../../assets/photos/long-battery-headphones.jpg';
-import gamingImmersion from '../../assets/photos/gaming-headset-immersion.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -83,7 +83,7 @@ export default function AccessoriesHeadphones() {
       price: '$399.00',
       monthlyPrice: '$33.25',
       colors: ['Black', 'Silver', 'Midnight Blue'],
-      image: sonyXM5
+      image: '/assets/photos/sony-wh-1000xm5.jpg'
     },
     {
       id: 2,
@@ -104,7 +104,7 @@ export default function AccessoriesHeadphones() {
       price: '$349.99',
       monthlyPrice: '$29.17',
       colors: ['Black', 'White'],
-      image: steelseriesNova
+      image: '/assets/photos/steelseries-arctis-nova-pro.jpg'
     },
     {
       id: 3,
@@ -125,7 +125,7 @@ export default function AccessoriesHeadphones() {
       price: '$249.00',
       monthlyPrice: '$20.75',
       colors: ['White'],
-      image: airpodsPro
+      image: '/assets/photos/airpods-pro-2.jpg'
     },
     {
       id: 4,
@@ -146,7 +146,7 @@ export default function AccessoriesHeadphones() {
       price: '$379.95',
       monthlyPrice: '$31.66',
       colors: ['Black Copper', 'White Silver'],
-      image: sennheiserMomentum
+      image: '/assets/photos/sennheiser-momentum-4.jpg'
     }
   ];
 
@@ -160,7 +160,7 @@ export default function AccessoriesHeadphones() {
         'Multiple levels of cancellation',
         'Low latency for video & gaming'
       ],
-      image: ancTech
+      image: '/assets/photos/active-noise-cancellation.jpg'
     },
     {
       title: 'Spatial & Immersive Audio',
@@ -171,7 +171,7 @@ export default function AccessoriesHeadphones() {
         'Wide soundstage & accurate imaging',
         'Hi-Res codecs (LDAC, aptX)'
       ],
-      image: spatialAudio
+      image: '/assets/photos/spatial-audio.jpg'
     },
     {
       title: 'Battery Life & Charging',
@@ -182,7 +182,7 @@ export default function AccessoriesHeadphones() {
         'Wireless charging support',
         'Hot-swappable batteries (gaming)'
       ],
-      image: batteryLife
+      image: '/assets/photos/long-battery-headphones.jpg'
     },
     {
       title: 'Comfort & Gaming Features',
@@ -193,7 +193,7 @@ export default function AccessoriesHeadphones() {
         'ClearCast / AI noise-canceling mics',
         'RGB & customizable controls'
       ],
-      image: gamingImmersion
+      image: '/assets/photos/gaming-headset-immersion.jpg'
     }
   ];
 

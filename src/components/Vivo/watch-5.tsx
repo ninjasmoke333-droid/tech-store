@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual vivo Watch 5 images
-import watch5_1 from '../../assets/photos/vivo-watch5-1.jpg';
-import watch5_2 from '../../assets/photos/vivo-watch5-2.jpg';
 
-// Consideration images (replace with real shots)
-import BlueOS from '../../assets/photos/vivo-blueos.jpg';
-import WatchDisplay from '../../assets/photos/vivo-watch5-display.jpg';
-import HealthAI from '../../assets/photos/vivo-watch5-health.jpg';
-import BatteryLong from '../../assets/photos/vivo-watch5-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +65,7 @@ export default function VivoWatch5() {
       price: '$109.00',
       monthlyPrice: '$9.08',
       finishes: ['Night Black', 'Moonlight White'],
-      image: watch5_1
+      image: '/assets/photos/vivo-watch5-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +86,7 @@ export default function VivoWatch5() {
       price: '$129.00',
       monthlyPrice: '$10.75',
       finishes: ['Night Black', 'Moonlight White', 'Peach Pink'],
-      image: watch5_1
+      image: '/assets/photos/vivo-watch5-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +107,7 @@ export default function VivoWatch5() {
       price: '$149.00',
       monthlyPrice: '$12.42',
       finishes: ['Stainless Steel Silver'],
-      image: watch5_2
+      image: '/assets/photos/vivo-watch5-2.jpg'
     }
   ];
 
@@ -129,7 +121,7 @@ export default function VivoWatch5() {
         'AI-powered running coach & fitness insights',
         'Bluetooth 5.4 for stable connectivity'
       ],
-      image: BlueOS
+      image: '/assets/photos/vivo-blueos.jpg'
     },
     {
       title: '1.43-inch AMOLED Display',
@@ -140,7 +132,7 @@ export default function VivoWatch5() {
         '2.5D curved glass for premium feel',
         '60Hz refresh rate with AOD support'
       ],
-      image: WatchDisplay
+      image: '/assets/photos/vivo-watch5-display.jpg'
     },
     {
       title: 'Advanced Health & Fitness Tracking',
@@ -151,7 +143,7 @@ export default function VivoWatch5() {
         '100+ sports modes with AI coaching',
         'Multi-system GPS for accurate outdoor tracking'
       ],
-      image: HealthAI
+      image: '/assets/photos/vivo-watch5-health.jpg'
     },
     {
       title: 'Ultra-Long Battery Life',
@@ -162,7 +154,7 @@ export default function VivoWatch5() {
         'Fast charging support',
         'Efficient power management via BlueOS 2.0'
       ],
-      image: BatteryLong
+      image: '/assets/photos/vivo-watch5-battery.jpg'
     }
   ];
 

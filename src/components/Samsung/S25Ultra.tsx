@@ -3,15 +3,8 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Galaxy S25 Ultra images
-import s25ultra1 from '../../assets/photos/s25-ultra-1.jpg';
-import s25ultra2 from '../../assets/photos/s25-ultra-2.jpg';
 
-// Consideration images
-import SnapdragonChip from '../../assets/photos/snapdragon-8-elite.jpg';
-import DisplayShot from '../../assets/photos/s25-display.jpg';
-import SPen from '../../assets/photos/s25-spen.jpg';
-import BatteryLife from '../../assets/photos/s25-battery.jpg';
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -72,7 +65,7 @@ export default function SamsungS25Ultra() {
       price: '$1,299.00',
       monthlyPrice: '$108.25',
       finishes: ['Titanium Black', 'Titanium Gray', 'Titanium Silverblue', 'Titanium Whitesilver'],
-      image: s25ultra1
+      image: '/assets/photos/s25-ultra-1.jpg'
     },
     {
       id: 2,
@@ -92,7 +85,7 @@ export default function SamsungS25Ultra() {
       price: '$1,419.99',
       monthlyPrice: '$118.33',
       finishes: ['Titanium Black', 'Titanium Gray', 'Titanium Silverblue', 'Titanium Whitesilver'],
-      image: s25ultra1
+      image: '/assets/photos/s25-ultra-1.jpg'
     },
     {
       id: 3,
@@ -112,7 +105,7 @@ export default function SamsungS25Ultra() {
       price: '$1,659.99',
       monthlyPrice: '$138.33',
       finishes: ['Titanium Black', 'Titanium Gray', 'Titanium Silverblue', 'Titanium Whitesilver'],
-      image: s25ultra2
+      image: '/assets/photos/s25-ultra-2.jpg'
     }
   ];
 
@@ -126,7 +119,7 @@ export default function SamsungS25Ultra() {
         'Improved power efficiency for longer battery life',
         'Supports seamless Galaxy AI features'
       ],
-      image: SnapdragonChip
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '6.9-inch Dynamic AMOLED 2X display',
@@ -137,7 +130,7 @@ export default function SamsungS25Ultra() {
         'Anti-reflective coating reduces glare',
         'Gorilla Armor 2 for enhanced durability'
       ],
-      image: DisplayShot
+      image: '/assets/photos/s25-display.jpg'
     },
     {
       title: 'S Pen built-in',
@@ -148,7 +141,7 @@ export default function SamsungS25Ultra() {
         'Seamless integration with Galaxy AI tools',
         'Perfect for productivity and creativity'
       ],
-      image: SPen
+      image: '/assets/photos/s25-spen.jpg'
     },
     {
       title: 'All-day battery and pro-grade cameras',
@@ -159,7 +152,7 @@ export default function SamsungS25Ultra() {
         '200MP main camera with AI enhancements',
         '50MP 5x telephoto, 50MP ultra-wide for pro-level zoom and detail'
       ],
-      image: BatteryLife
+      image: '/assets/photos/s25-battery.jpg'
     }
   ];
 

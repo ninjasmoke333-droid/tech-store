@@ -3,15 +3,9 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual OnePlus Nord 5 images
-import nord5_1 from '../../assets/photos/nord5-1.jpg';
-import nord5_2 from '../../assets/photos/nord5-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonChip from '../../assets/photos/snapdragon-8s-gen3.jpg';
-import NordDisplay from '../../assets/photos/nord5-display.jpg';
-import CameraShot from '../../assets/photos/nord5-camera.jpg';
-import NordBattery from '../../assets/photos/nord5-battery.jpg';
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +67,7 @@ export default function OnePlusOnePlusNord5() {
       price: '$449.00',
       monthlyPrice: '$37.42',
       finishes: ['Marble Sands', 'Dry Ice', 'Phantom Grey'],
-      image: nord5_1
+      image: '/assets/photos/nord5-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +88,7 @@ export default function OnePlusOnePlusNord5() {
       price: '$499.00',
       monthlyPrice: '$41.58',
       finishes: ['Marble Sands', 'Dry Ice', 'Phantom Grey'],
-      image: nord5_1
+      image: '/assets/photos/nord5-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +109,7 @@ export default function OnePlusOnePlusNord5() {
       price: '$549.00',
       monthlyPrice: '$45.75',
       finishes: ['Marble Sands', 'Dry Ice', 'Phantom Grey'],
-      image: nord5_2
+      image: '/assets/photos/nord5-2.jpg'
     }
   ];
 
@@ -129,7 +123,7 @@ export default function OnePlusOnePlusNord5() {
         'Large VC cooling system for sustained performance',
         'Optimized for OnePlus AI features'
       ],
-      image: SnapdragonChip
+      image: '/assets/photos/snapdragon-8s-gen3.jpg'
     },
     {
       title: '6.83-inch Swift AMOLED Display',
@@ -140,7 +134,7 @@ export default function OnePlusOnePlusNord5() {
         'Aqua Touch 2.0 for wet/oily finger accuracy',
         'Ultra-thin bezels for immersive viewing'
       ],
-      image: NordDisplay
+      image: '/assets/photos/nord5-display.jpg'
     },
     {
       title: 'Flagship Dual 50MP Cameras',
@@ -151,7 +145,7 @@ export default function OnePlusOnePlusNord5() {
         'AI Perfect Shot, AI Unblur, night mode enhancements',
         '4K video with advanced stabilization'
       ],
-      image: CameraShot
+      image: '/assets/photos/nord5-camera.jpg'
     },
     {
       title: 'Beast-Mode 6800mAh Battery',
@@ -162,7 +156,7 @@ export default function OnePlusOnePlusNord5() {
         'Bypass charging for cooler gaming sessions',
         '5W reverse wired charging support'
       ],
-      image: NordBattery
+      image: '/assets/photos/nord5-battery.jpg'
     }
   ];
 

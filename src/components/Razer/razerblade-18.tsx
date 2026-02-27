@@ -4,15 +4,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// Replace these with your actual Razer Blade 18 image files
-import blade18Black from '../../assets/photos/razer-blade-18-black.jpg';
-import blade18Mercury from '../../assets/photos/razer-blade-18-mercury.jpg';
 
-// Optional consideration images (replace with real shots if available)
-import miniLedDisplay from '../../assets/photos/razer-blade-18-miniled.jpg';
-import vaporChamber from '../../assets/photos/razer-vapor-chamber.jpg';
-import chromaPerKey from '../../assets/photos/razer-chroma-per-key.jpg';
-import rtx5090 from '../../assets/photos/nvidia-rtx-5090-laptop.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -85,7 +77,7 @@ export default function RazerRazerblade1() {
       price: '$3,999.99',
       monthlyPrice: '$333.33',
       colors: ['Black', 'Mercury'],
-      image: blade18Black
+      image: '/assets/photos/razer-blade-18-black.jpg'
     },
     {
       id: 2,
@@ -108,7 +100,7 @@ export default function RazerRazerblade1() {
       price: '$5,199.99',
       monthlyPrice: '$433.33',
       colors: ['Black', 'Mercury'],
-      image: blade18Mercury
+      image: '/assets/photos/razer-blade-18-mercury.jpg'
     }
   ];
 
@@ -122,7 +114,7 @@ export default function RazerRazerblade1() {
         '100% DCI-P3, Dolby Vision, G-SYNC',
         'Anti-reflective coating & 1000 nits peak brightness'
       ],
-      image: miniLedDisplay
+      image: '/assets/photos/razer-blade-18-miniled.jpg'
     },
     {
       title: 'Vapor Chamber Cooling',
@@ -133,7 +125,7 @@ export default function RazerRazerblade1() {
         'Liquid metal on CPU & GPU',
         'Supports full 330W system power'
       ],
-      image: vaporChamber
+      image: '/assets/photos/razer-vapor-chamber.jpg'
     },
     {
       title: 'Per-Key Chroma RGB',
@@ -144,7 +136,7 @@ export default function RazerRazerblade1() {
         'Synapse 4 support with cloud profiles',
         'Macro recording & secondary layers'
       ],
-      image: chromaPerKey
+      image: '/assets/photos/razer-chroma-per-key.jpg'
     },
     {
       title: 'NVIDIA RTX 5090 Laptop GPU',
@@ -155,7 +147,7 @@ export default function RazerRazerblade1() {
         'Advanced Optimus & MUX Switch',
         'Supports 8K output & VR'
       ],
-      image: rtx5090
+      image: '/assets/photos/nvidia-rtx-5090-laptop.jpg'
     }
   ];
 

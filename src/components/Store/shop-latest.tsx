@@ -8,7 +8,7 @@ import {
   ChevronLeft,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import TechStoreVid from '../../assets/store-vid.mp4';
+
 import SearchDropdown from '../Searchdropdown';
 
 const AppleStoreInspired = () => {
@@ -1248,7 +1248,7 @@ const AppleStoreInspired = () => {
             // Remove transform and position properties
           }}
         >
-          <source src={TechStoreVid} type="video/mp4" />
+          <source src='/assets/store-vid.mp4' type="video/mp4" />
         </video>
 
         <div style={{ position: 'relative', zIndex: 2 }}>

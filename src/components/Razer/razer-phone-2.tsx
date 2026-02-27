@@ -4,15 +4,9 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// Replace these with your actual Razer Phone 2 image files (front/back views, etc.)
-import phoneBlackMirror from '../../assets/photos/razer-phone-2-mirror-black.jpg';
-import phoneBlackSatin from '../../assets/photos/razer-phone-2-satin-black.jpg';
 
-// Optional consideration images (chip, display, camera, battery — replace with real ones)
-import snapdragon845 from '../../assets/photos/snapdragon-845.jpg';
-import ultraMotionDisplay from '../../assets/photos/razer-120hz-display.jpg';
-import dualCamera from '../../assets/photos/razer-phone-2-camera.jpg';
-import chromaLogo from '../../assets/photos/razer-chroma-logo.jpg';
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -84,7 +78,7 @@ export default function RazerRazerPhone2() {
       price: '$799.00',
       monthlyPrice: '$66.58',
       colors: ['Mirror Black', 'Satin Black (Limited)'],
-      image: phoneBlackMirror
+      image: '/assets/photos/razer-phone-2-mirror-black.jpg'
     },
     {
       id: 2,
@@ -106,7 +100,7 @@ export default function RazerRazerPhone2() {
       price: '$849.00',
       monthlyPrice: '$70.75',
       colors: ['Mirror Black', 'Satin Black (Limited)'],
-      image: phoneBlackSatin
+      image: '/assets/photos/razer-phone-2-satin-black.jpg'
     }
   ];
 
@@ -120,7 +114,7 @@ export default function RazerRazerPhone2() {
         '8GB LPDDR4X RAM for multitasking',
         'Optimized for demanding mobile games'
       ],
-      image: snapdragon845
+      image: '/assets/photos/snapdragon-845.jpg'
     },
     {
       title: '120Hz UltraMotion Display',
@@ -131,7 +125,7 @@ export default function RazerRazerPhone2() {
         '100% DCI-P3 color gamut & HDR10',
         'Corning Gorilla Glass 5 protection'
       ],
-      image: ultraMotionDisplay
+      image: '/assets/photos/razer-120hz-display.jpg'
     },
     {
       title: 'Dual Camera System',
@@ -142,7 +136,7 @@ export default function RazerRazerPhone2() {
         '4K video recording @ 60fps',
         'Beauty & Portrait modes'
       ],
-      image: dualCamera
+      image: '/assets/photos/razer-phone-2-camera.jpg'
     },
     {
       title: 'Chroma RGB & THX Audio',
@@ -153,7 +147,7 @@ export default function RazerRazerPhone2() {
         'Reactive lighting effects',
         '4000mAh battery with fast & wireless charging'
       ],
-      image: chromaLogo
+      image: '/assets/photos/razer-chroma-logo.jpg'
     }
   ];
 

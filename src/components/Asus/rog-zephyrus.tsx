@@ -3,15 +3,9 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual ASUS ROG Zephyrus G16 (2026) images
-import zephyrusG16_1 from '../../assets/photos/rog-zephyrus-g16-2026-1.jpg';
-import zephyrusG16_2 from '../../assets/photos/rog-zephyrus-g16-2026-2.jpg';
 
-// Consideration images (replace with real shots)
-import IntelCoreUltra from '../../assets/photos/intel-core-ultra-386h.jpg';
-import ZephyrusDisplay from '../../assets/photos/zephyrus-g16-display.jpg';
-import RTX5090 from '../../assets/photos/rtx-5090-laptop.jpg';
-import ZephyrusCooling from '../../assets/photos/zephyrus-g16-cooling.jpg';
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +67,7 @@ export default function AsusRogZephyrus() {
       price: '$2,499.00',
       monthlyPrice: '$208.25',
       finishes: ['Eclipse Gray', 'Platinum White'],
-      image: zephyrusG16_1
+      image: '/assets/photos/rog-zephyrus-g16-2026-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +88,7 @@ export default function AsusRogZephyrus() {
       price: '$2,799.00',
       monthlyPrice: '$233.25',
       finishes: ['Eclipse Gray', 'Platinum White'],
-      image: zephyrusG16_1
+      image: '/assets/photos/rog-zephyrus-g16-2026-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +109,7 @@ export default function AsusRogZephyrus() {
       price: '$3,199.00',
       monthlyPrice: '$266.58',
       finishes: ['Eclipse Gray', 'Platinum White'],
-      image: zephyrusG16_2
+      image: '/assets/photos/rog-zephyrus-g16-2026-2.jpg'
     }
   ];
 
@@ -129,7 +123,7 @@ export default function AsusRogZephyrus() {
         'Efficient power management for thin chassis',
         'Optimized for Copilot+ PC features'
       ],
-      image: IntelCoreUltra
+      image: '/assets/photos/intel-core-ultra-386h.jpg'
     },
     {
       title: '16-inch 2.5K OLED Nebula HDR Display',
@@ -140,7 +134,7 @@ export default function AsusRogZephyrus() {
         '100% DCI-P3 color gamut, 0.2ms response time',
         'Pantone Validated & eye-care certified'
       ],
-      image: ZephyrusDisplay
+      image: '/assets/photos/zephyrus-g16-display.jpg'
     },
     {
       title: 'NVIDIA GeForce RTX 50 Series Graphics',
@@ -151,7 +145,7 @@ export default function AsusRogZephyrus() {
         'NVIDIA Studio drivers for creators',
         'Max-Q technologies for efficiency'
       ],
-      image: RTX5090
+      image: '/assets/photos/rtx-5090-laptop.jpg'
     },
     {
       title: 'Ultra-Slim Design & Advanced Cooling',
@@ -162,7 +156,7 @@ export default function AsusRogZephyrus() {
         'Slash Lighting & premium aluminum finish',
         'Dual-fan system with 0dB ambient cooling'
       ],
-      image: ZephyrusCooling
+      image: '/assets/photos/zephyrus-g16-cooling.jpg'
     }
   ];
 

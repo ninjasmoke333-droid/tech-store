@@ -3,15 +3,8 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual OnePlus 15 images
-import oneplus15_1 from '../../assets/photos/op-15-1.jpg';
-import oneplus15_2 from '../../assets/photos/op-15-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite.jpg';
-import PhoneDisplay from '../../assets/photos/oneplus15-display.jpg';
-import CameraHasselblad from '../../assets/photos/oneplus15-camera.jpg';
-import BatteryUltra from '../../assets/photos/oneplus15-battery.jpg';
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +66,7 @@ export default function OnePlusOnePlus15() {
       price: '$899.00',
       monthlyPrice: '$74.92',
       finishes: ['Nebula Black', 'Glacier White', 'Aurora Green'],
-      image: oneplus15_1
+      image: '/assets/photos/op-15-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +87,7 @@ export default function OnePlusOnePlus15() {
       price: '$999.00',
       monthlyPrice: '$83.25',
       finishes: ['Nebula Black', 'Glacier White', 'Aurora Green'],
-      image: oneplus15_1
+      image: '/assets/photos/op-15-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +108,7 @@ export default function OnePlusOnePlus15() {
       price: '$1,099.00',
       monthlyPrice: '$91.58',
       finishes: ['Nebula Black', 'Glacier White', 'Aurora Green'],
-      image: oneplus15_2
+      image: '/assets/photos/op-15-2.jpg'
     }
   ];
 
@@ -129,7 +122,7 @@ export default function OnePlusOnePlus15() {
         'Advanced NPU for real-time AI features',
         'Superior thermal management for long sessions'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '6.82-inch LTPO AMOLED 2K Display',
@@ -140,7 +133,7 @@ export default function OnePlusOnePlus15() {
         'HDR10+ and Dolby Vision support',
         'Ultra-narrow bezels and curved edges'
       ],
-      image: PhoneDisplay
+      image: '/assets/photos/oneplus15-display.jpg'
     },
     {
       title: 'Hasselblad Triple 50MP Camera System',
@@ -151,7 +144,7 @@ export default function OnePlusOnePlus15() {
         'Hasselblad color calibration & Master Mode',
         '8K video, AI scene optimization, night mode'
       ],
-      image: CameraHasselblad
+      image: '/assets/photos/oneplus15-camera.jpg'
     },
     {
       title: '6000mAh Battery & Ultra-Fast Charging',
@@ -162,7 +155,7 @@ export default function OnePlusOnePlus15() {
         '50W AIRVOOC wireless charging',
         'Reverse wireless charging support'
       ],
-      image: BatteryUltra
+      image: '/assets/photos/oneplus15-battery.jpg'
     }
   ];
 

@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual vivo Pad 5 Pro images
-import pad5pro_1 from '../../assets/photos/vivo-pad5pro-1.jpg';
-import pad5pro_2 from '../../assets/photos/vivo-pad5pro-2.jpg';
 
-// Consideration images (replace with real shots)
-import Dimensity9400 from '../../assets/photos/dimensity-9400.jpg';
-import VivoDisplay from '../../assets/photos/pad5pro-display.jpg';
-import StylusVivo from '../../assets/photos/pad5pro-stylus.png';
-import VivoBattery from '../../assets/photos/pad5pro-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -75,7 +67,7 @@ export default function VivoPad5Pro() {
       price: '$599.00',
       monthlyPrice: '$49.92',
       finishes: ['Gray', 'Blue', 'White', 'Soft Pink'],
-      image: pad5pro_1
+      image: '/assets/photos/vivo-pad5pro-1.jpg'
     },
     {
       id: 2,
@@ -96,7 +88,7 @@ export default function VivoPad5Pro() {
       price: '$649.00',
       monthlyPrice: '$54.08',
       finishes: ['Gray', 'Blue', 'White', 'Soft Pink'],
-      image: pad5pro_1
+      image: '/assets/photos/vivo-pad5pro-1.jpg'
     },
     {
       id: 3,
@@ -117,7 +109,7 @@ export default function VivoPad5Pro() {
       price: '$749.00',
       monthlyPrice: '$62.42',
       finishes: ['Gray', 'Blue', 'White', 'Soft Pink'],
-      image: pad5pro_2
+      image: '/assets/photos/vivo-pad5pro-2.jpg'
     }
   ];
 
@@ -131,7 +123,7 @@ export default function VivoPad5Pro() {
         'Efficient NPU for on-device AI processing',
         'Large cooling system for sustained power'
       ],
-      image: Dimensity9400
+      image: '/assets/photos/dimensity-9400.jpg'
     },
     {
       title: '13.0-inch 3.1K Display',
@@ -142,7 +134,7 @@ export default function VivoPad5Pro() {
         '3:2 aspect ratio for productivity',
         'Eye-care features in Soft Light variants'
       ],
-      image: VivoDisplay
+      image: '/assets/photos/pad5pro-display.jpg'
     },
     {
       title: 'Stylus & Productivity Tools',
@@ -153,7 +145,7 @@ export default function VivoPad5Pro() {
         'OriginOS 5 HD with AI enhancements',
         'Optimized for creative and professional use'
       ],
-      image: StylusVivo
+      image: '/assets/photos/pad5pro-stylus.png'
     },
     {
       title: '12050mAh Battery & Fast Charging',
@@ -164,7 +156,7 @@ export default function VivoPad5Pro() {
         'Up to 18+ hours of video playback',
         'Efficient power with Dimensity 9400'
       ],
-      image: VivoBattery
+      image: '/assets/photos/pad5pro-battery.jpg'
     }
   ];
 

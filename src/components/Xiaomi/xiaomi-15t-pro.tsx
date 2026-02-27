@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Xiaomi 15T Pro images
-import xiaomi15tpro_1 from '../../assets/photos/xiaomi-15tpro-1.jpg';
-import xiaomi15tpro_2 from '../../assets/photos/xiaomi-15tpro-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonElite from '../../assets/photos/snapdragon-8-elite.jpg';
-import XiaomiDisplay from '../../assets/photos/xiaomi15tpro-display.jpg';
-import LeicaCamera from '../../assets/photos/xiaomi15tpro-camera.jpg';
-import XiaomiBattery from '../../assets/photos/xiaomi15tpro-battery.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -75,7 +67,7 @@ export default function XiaomiXiaomi15TPro() {
       price: '$749.00',
       monthlyPrice: '$62.42',
       finishes: ['Black Titanium', 'White Ceramic', 'Forest Green'],
-      image: xiaomi15tpro_1
+      image: '/assets/photos/xiaomi-15tpro-1.jpg'
     },
     {
       id: 2,
@@ -96,7 +88,7 @@ export default function XiaomiXiaomi15TPro() {
       price: '$799.00',
       monthlyPrice: '$66.58',
       finishes: ['Black Titanium', 'White Ceramic', 'Forest Green'],
-      image: xiaomi15tpro_1
+      image: '/assets/photos/xiaomi-15tpro-1.jpg'
     },
     {
       id: 3,
@@ -117,7 +109,7 @@ export default function XiaomiXiaomi15TPro() {
       price: '$899.00',
       monthlyPrice: '$74.92',
       finishes: ['Black Titanium', 'White Ceramic', 'Forest Green'],
-      image: xiaomi15tpro_2
+      image: '/assets/photos/xiaomi-15tpro-2.jpg'
     }
   ];
 
@@ -131,7 +123,7 @@ export default function XiaomiXiaomi15TPro() {
         'Powerful NPU for real-time AI features',
         'Advanced thermal system for long sessions'
       ],
-      image: SnapdragonElite
+      image: '/assets/photos/snapdragon-8-elite.jpg'
     },
     {
       title: '6.73-inch LTPO AMOLED 1.5K Display',
@@ -142,7 +134,7 @@ export default function XiaomiXiaomi15TPro() {
         'HDR10+ and Dolby Vision support',
         'Ultra-narrow bezels with curved glass'
       ],
-      image: XiaomiDisplay
+      image: '/assets/photos/xiaomi15tpro-display.jpg'
     },
     {
       title: 'Leica Triple 50MP Camera System',
@@ -153,7 +145,7 @@ export default function XiaomiXiaomi15TPro() {
         'Leica Summilux lens & color science',
         '8K video, AI enhancements, night mode'
       ],
-      image: LeicaCamera
+      image: '/assets/photos/xiaomi15tpro-camera.jpg'
     },
     {
       title: '6100mAh Battery & Ultra-Fast Charging',
@@ -164,7 +156,7 @@ export default function XiaomiXiaomi15TPro() {
         '50W wireless charging support',
         'Reverse wireless charging capability'
       ],
-      image: XiaomiBattery
+      image: '/assets/photos/xiaomi15tpro-battery.jpg'
     }
   ];
 

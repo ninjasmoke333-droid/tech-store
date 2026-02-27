@@ -3,15 +3,8 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual vivo X300 images
-import vivoX300_1 from '../../assets/photos/vivo-x300-1.jpg';
-import vivoX300_2 from '../../assets/photos/vivo-x300-2.jpg';
 
-// Consideration images (replace with real shots)
-import Dimensity9400 from '../../assets/photos/dimensity-9400.jpg';
-import VivoXDisplay from '../../assets/photos/vivo-x300-3.jpg';
-import ZeissCamera from '../../assets/photos/vivo-x300-camera.jpg';
-import VivoXBattery from '../../assets/photos/vivo-x300-battery.jpg';
+
 import { useCart } from '../../context/CartContext';
 
 interface Product {
@@ -72,7 +65,7 @@ export default function VivoX300Series() {
       price: '$699.00',
       monthlyPrice: '$58.25',
       finishes: ['Starry Black', 'Nebula Purple', 'Glacier White'],
-      image: vivoX300_1
+      image: '/assets/photos/vivo-x300-1.jpg'
     },
     {
       id: 2,
@@ -93,7 +86,7 @@ export default function VivoX300Series() {
       price: '$799.00',
       monthlyPrice: '$66.58',
       finishes: ['Starry Black', 'Nebula Purple', 'Glacier White'],
-      image: vivoX300_1
+      image: '/assets/photos/vivo-x300-1.jpg'
     },
     {
       id: 3,
@@ -114,7 +107,7 @@ export default function VivoX300Series() {
       price: '$899.00',
       monthlyPrice: '$74.92',
       finishes: ['Starry Black', 'Nebula Purple', 'Glacier White'],
-      image: vivoX300_2
+      image: '/assets/photos/vivo-x300-2.jpg'
     }
   ];
 
@@ -128,7 +121,7 @@ export default function VivoX300Series() {
         'High-performance NPU for AI features',
         'Large vapor chamber cooling for long sessions'
       ],
-      image: Dimensity9400
+      image: '/assets/photos/dimensity-9400.jpg'
     },
     {
       title: '6.78-inch LTPO AMOLED 1.5K Display',
@@ -139,7 +132,7 @@ export default function VivoX300Series() {
         'HDR10+ and eye-protection modes',
         'Ultra-thin bezels with curved edges'
       ],
-      image: VivoXDisplay
+      image: '/assets/photos/vivo-x300-3.jpg'
     },
     {
       title: 'Zeiss Triple 50MP Camera System',
@@ -150,7 +143,7 @@ export default function VivoX300Series() {
         'Zeiss T* coating & color tuning',
         '8K video, AI scene enhancement, night mode'
       ],
-      image: ZeissCamera
+      image: '/assets/photos/vivo-x300-camera.jpg'
     },
     {
       title: '6500mAh Battery & Ultra-Fast Charging',
@@ -161,7 +154,7 @@ export default function VivoX300Series() {
         '50W wireless charging support',
         'Reverse wireless charging capability'
       ],
-      image: VivoXBattery
+      image: '/assets/photos/vivo-x300-battery.jpg'
     }
   ];
 

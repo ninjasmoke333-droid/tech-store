@@ -3,15 +3,11 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual ASUS ROG Phone 9 images
-import rogphone9_1 from '../../assets/photos/rog-phone9-1.jpg';
-import rogphone9_2 from '../../assets/photos/rog-phone9-2.jpg';
 
-// Consideration images (replace with real shots)
-import SnapdragonEliteGaming from '../../assets/photos/snapdragon-8-elite-gaming.jpg';
-import ROGDisplay from '../../assets/photos/rog-phone9-display.jpg';
-import AirTrigger from '../../assets/photos/rog-phone9-airtrigger.jpg';
-import ROGBattery from '../../assets/photos/rog-phone9-battery.jpg';
+
+
+
+
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +69,7 @@ export default function AsusRogPhone9Pro() {
       price: '$1,099.00',
       monthlyPrice: '$91.58',
       finishes: ['Phantom Black', 'Storm White'],
-      image: rogphone9_1
+      image: '/assets/photos/rog-phone9-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +90,7 @@ export default function AsusRogPhone9Pro() {
       price: '$1,199.00',
       monthlyPrice: '$99.92',
       finishes: ['Phantom Black', 'Storm White'],
-      image: rogphone9_1
+      image: '/assets/photos/rog-phone9-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +111,7 @@ export default function AsusRogPhone9Pro() {
       price: '$1,299.00',
       monthlyPrice: '$108.25',
       finishes: ['Phantom Black', 'Storm White'],
-      image: rogphone9_2
+      image: '/assets/photos/rog-phone9-2.jpg'
     }
   ];
 
@@ -129,7 +125,7 @@ export default function AsusRogPhone9Pro() {
         'Advanced thermal system for zero throttling',
         'Game Genie AI for real-time optimizations'
       ],
-      image: SnapdragonEliteGaming
+      image: '/assets/photos/snapdragon-8-elite-gaming.jpg'
     },
     {
       title: '6.78-inch LTPO AMOLED 165Hz Display',
@@ -140,7 +136,7 @@ export default function AsusRogPhone9Pro() {
         'HDR10+ and 1ms response time',
         'Gorilla Glass Victus 2 protection'
       ],
-      image: ROGDisplay
+      image: '/assets/photos/rog-phone9-display.jpg'
     },
     {
       title: 'AirTrigger & Gaming Controls',
@@ -151,7 +147,7 @@ export default function AsusRogPhone9Pro() {
         'Dual USB-C ports for charging + accessories',
         'AniMe Vision rear LED display for custom animations'
       ],
-      image: AirTrigger
+      image: '/assets/photos/rog-phone9-airtrigger.jpg'
     },
     {
       title: '5800mAh Battery & Bypass Charging',
@@ -162,7 +158,7 @@ export default function AsusRogPhone9Pro() {
         'Bypass charging to reduce heat during play',
         'Efficient power delivery for long sessions'
       ],
-      image: ROGBattery
+      image: '/assets/photos/rog-phone9-battery.jpg'
     }
   ];
 

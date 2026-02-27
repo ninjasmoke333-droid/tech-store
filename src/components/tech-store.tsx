@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   ChevronRight,
   Menu,
@@ -7,9 +7,9 @@ import {
   Search,
   ChevronLeft,
 } from 'lucide-react';
-import myVideo from '../assets/gelda.mp4';
+
 import '../index.css';
-import smartWatch1 from '../assets/smart-watch-1.mp4';
+
 import { Link } from 'react-router-dom';
 import Footer from './layout/footer';
 
@@ -1113,7 +1113,7 @@ const TechStoreLanding: React.FC = () => {
             zIndex: 1,
           }}
         >
-          <source src={myVideo} type="video/mp4" />
+          <source src="/assets/gelda.mp4" type="video/mp4" />
         </video>
 
         <div
@@ -1246,7 +1246,7 @@ const TechStoreLanding: React.FC = () => {
             zIndex: 1,
           }}
         >
-          <source src={smartWatch1} type="video/mp4" />
+          <source src="/assets/smart-watch-1.mp4" type="video/mp4" />
         </video>
 
         {/* Centered Content */}
@@ -1334,7 +1334,7 @@ const TechStoreLanding: React.FC = () => {
       <section
         style={{
           position: 'relative',
-          background: `url('/src/assets/photos/smart-watch-photo-1.jpg') center/cover no-repeat`,
+          backgroundImage: `url('/assets/photos/smart-watch-photo-1.jpg') center/cover no-repeat`, 
 
           color: '#ffffff',
           minHeight: isMobile ? '600px' : '700px',
@@ -1447,7 +1447,7 @@ const TechStoreLanding: React.FC = () => {
       <section
         style={{
           position: 'relative',
-          background: `url('/src/assets/photos/one-plus-pad-1.webp') center/cover no-repeat`,
+          background: `url('/assets/photos/one-plus-pad-1.webp') center/cover no-repeat`,
 
           color: '#ffffff',
           minHeight: isMobile ? '600px' : '700px',
@@ -1560,7 +1560,7 @@ const TechStoreLanding: React.FC = () => {
       <section
         style={{
           position: 'relative',
-          background: `url('/src/assets/photos/op-15-3.jpg') center/cover no-repeat`,
+          background: `url('/assets/photos/op-15-3.jpg') center/cover no-repeat`,
 
           color: '#ffffff',
           minHeight: isMobile ? '600px' : '700px',

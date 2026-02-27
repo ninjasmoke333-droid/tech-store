@@ -1,29 +1,16 @@
-// src/components/Apple/Mac.tsx
-import  { useState, useEffect } from 'react';
+// src/components/Apple/iPhone.tsx
+import { useState, useEffect } from 'react';
 import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// Import product images
-import ProMax1 from '../../assets/photos/17-pro-max-1.jpg';
-import ProMax2 from '../../assets/photos/17-pro-max-2.jpg';
-
-// Import consideration images
-import A19chip from '../../assets/photos/a19-pro.jpg';
-import ProMaxCam from '../../assets/photos/pro-max-cam.jpg';
-import ProMaxRet from '../../assets/photos/pro-max-ret.jpg';
-import ProMaxBat from '../../assets/photos/pro-max-bat.jpg'
-
 import { useCart } from '../../context/CartContext';
-
-
 
 interface Product {
   id: number;
   badge?: string;
   chip: string;
   display: string;
-  
   camera: string;
   memory: string;
   storage: string;
@@ -32,18 +19,13 @@ interface Product {
   monthlyPrice: string;
   finishes: string[];
   image?: string;
- 
-  
 }
-
-
 
 export default function AppleiPhone() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 832);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
-  
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -83,8 +65,7 @@ export default function AppleiPhone() {
       price: '$1,199.00',
       monthlyPrice: '$49.95',
       finishes: ['Black Titanium', 'Natural Titanium', 'White Titanium', 'Desert Titanium'],
-      image: ProMax1
-      // image: iPhoneBlack (add if you have assets)
+      image: '/assets/photos/17-pro-max-1.jpg'
     },
     {
       id: 2,
@@ -105,7 +86,7 @@ export default function AppleiPhone() {
       price: '$1,399.00',
       monthlyPrice: '$58.29',
       finishes: ['Black Titanium', 'Natural Titanium', 'White Titanium', 'Desert Titanium'],
-      image: ProMax1
+      image: '/assets/photos/17-pro-max-1.jpg'
     },
     {
       id: 3,
@@ -126,7 +107,7 @@ export default function AppleiPhone() {
       price: '$1,599.00',
       monthlyPrice: '$66.62',
       finishes: ['Black Titanium', 'Natural Titanium', 'White Titanium', 'Desert Titanium'],
-      image: ProMax2
+      image: '/assets/photos/17-pro-max-2.jpg'
     },
     {
       id: 4,
@@ -146,7 +127,7 @@ export default function AppleiPhone() {
       price: '$1,999.00',
       monthlyPrice: '$83.29',
       finishes: ['Black Titanium', 'Natural Titanium', 'White Titanium', 'Desert Titanium'],
-      image: ProMax2
+      image: '/assets/photos/17-pro-max-2.jpg'
     }
   ];
 
@@ -160,8 +141,7 @@ export default function AppleiPhone() {
         'Improved thermal design for longer high-performance sessions',
         'Supports advanced Apple Intelligence features',
       ],
-      image: A19chip
-      // image: ... add if you have chip photos
+      image: '/assets/photos/a19-pro.jpg'
     },
     {
       title: 'Pro camera system',
@@ -172,7 +152,7 @@ export default function AppleiPhone() {
         '18MP Center Stage front camera with autofocus',
         'ProRes video, 4K 120fps Dolby Vision, and more'
       ],
-      image: ProMaxCam
+      image: '/assets/photos/pro-max-cam.jpg'
     },
     {
       title: 'Super Retina XDR display',
@@ -183,7 +163,7 @@ export default function AppleiPhone() {
         'Always-On display and Dynamic Island',
         'Ceramic Shield 2 protection'
       ],
-      image: ProMaxRet
+      image: '/assets/photos/pro-max-ret.jpg'
     },
     {
       title: 'All-time high battery life',
@@ -194,17 +174,14 @@ export default function AppleiPhone() {
         'Faster charging with optional high-wattage adapters',
         'Optimized power efficiency from A19 Pro'
       ],
-      image: ProMaxBat
+      image: '/assets/photos/pro-max-bat.jpg'
     }
   ];
-
 
   const ProductCard = ({ product }: { product: Product }) => {
     const [selectedFinish, setSelectedFinish] = useState<string>(product.finishes[0]);
     const { addToCart } = useCart();
     const [buttonText, setButtonText] = useState('Add to Cart');
-
-    
 
     return (
       <div style={{
@@ -236,7 +213,7 @@ export default function AppleiPhone() {
         {product.image && (
           <img
             src={product.image}
-            alt={`${product.chip} MacBook Pro`}
+            alt={`${product.chip} iPhone 17 Pro Max`}
             style={{
               width: '100%',
               height: isMobile ? '180px' : '220px',
@@ -274,7 +251,6 @@ export default function AppleiPhone() {
           {product.chip}
         </h3>
 
-       
         <p style={{ fontSize: '16px', color: '#1d1d1f', marginBottom: '16px' }}>
           {product.memory} Unified Memory • {product.storage} SSD Storage
         </p>
@@ -306,47 +282,46 @@ export default function AppleiPhone() {
           </p>
         </div>
 
-         <button
-  onClick={() => {
-    const priceNumber = Number(
-      product.price.replace('$', '').replace(',', '')
-    );
+        <button
+          onClick={() => {
+            const priceNumber = Number(
+              product.price.replace('$', '').replace(',', '')
+            );
 
-    addToCart({
-      id: `ipad-${product.id}-${selectedFinish.toLowerCase().replace(/\s+/g, '-')}`,
-      productId: product.id,
-      name: `iPad Pro • ${product.chip}`,
-      variant: selectedFinish,
-      price: priceNumber,
-      image: product.image || '',
-      details: {
-        chip: product.chip,
-        display: product.display,
-        memory: product.memory,
-        storage: product.storage,
-      },
-    });
+            addToCart({
+              id: `iphone-${product.id}-${selectedFinish.toLowerCase().replace(/\s+/g, '-')}`,
+              productId: product.id,
+              name: `iPhone 17 Pro Max • ${product.chip}`,
+              variant: selectedFinish,
+              price: priceNumber,
+              image: product.image || '',
+              details: {
+                chip: product.chip,
+                display: product.display,
+                memory: product.memory,
+                storage: product.storage,
+              },
+            });
 
-    // Optional: nice feedback
-    setButtonText('Added!');
-    setTimeout(() => setButtonText('Add to Cart'), 1800);
-  }}
-  style={{
-    width: '100%',
-    marginTop: '20px',
-    padding: '14px 24px',
-    background: buttonText === 'Added!' ? '#34c759' : '#0071e3',
-    color: 'white',
-    border: 'none',
-    borderRadius: '12px',
-    fontSize: '17px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    transition: 'background 0.3s',
-  }}
->
-  {buttonText}
-</button>
+            setButtonText('Added!');
+            setTimeout(() => setButtonText('Add to Cart'), 1800);
+          }}
+          style={{
+            width: '100%',
+            marginTop: '20px',
+            padding: '14px 24px',
+            background: buttonText === 'Added!' ? '#34c759' : '#0071e3',
+            color: 'white',
+            border: 'none',
+            borderRadius: '12px',
+            fontSize: '17px',
+            fontWeight: '600',
+            cursor: 'pointer',
+            transition: 'background 0.3s',
+          }}
+        >
+          {buttonText}
+        </button>
       </div>
     );
   };
@@ -467,20 +442,19 @@ export default function AppleiPhone() {
                   gap: '16px'
                 }}
               >
-                {/* Placeholder for chip/camera images */}
                 {item.image && (
-  <img
-    src={item.image}
-    alt={item.title}
-    style={{
-      width: '100%',
-      height: '160px',
-      objectFit: 'cover',
-      borderRadius: '12px',
-      background: '#f5f5f7'
-    }}
-  />
-)}
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    style={{
+                      width: '100%',
+                      height: '160px',
+                      objectFit: 'cover',
+                      borderRadius: '12px',
+                      background: '#f5f5f7'
+                    }}
+                  />
+                )}
 
                 <h3 style={{
                   fontSize: '22px',
@@ -530,8 +504,6 @@ export default function AppleiPhone() {
 
         {/* Add more sections like Education banner, Compare, AppleCare if desired */}
       </main>
-
-
 
       <Footer isMobile={isMobile} />
     </div>

@@ -3,15 +3,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// You'll need to replace these with your actual Razer Basilisk V3 images
-import basiliskv3_1 from '../../assets/photos/razer-basilisk-v3-1.jpg';
-import basiliskv3_2 from '../../assets/photos/razer-basilisk-v3-2.jpg';
 
-// Consideration images (replace with real shots)
-import FocusPlusSensor from '../../assets/photos/razer-focus-plus-sensor.jpg';
-import ChromaRGB from '../../assets/photos/razer-chroma-rgb.jpg';
-import OpticalSwitches from '../../assets/photos/razer-optical-switches.jpg';
-import ErgonomicDesign from '../../assets/photos/razer-basilisk-ergonomics.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +65,7 @@ export default function RazerRazerBasiliskV3() {
       price: '$69.99',
       monthlyPrice: '$5.83',
       finishes: ['Classic Black', 'Quartz Pink'],
-      image: basiliskv3_1
+      image: '/assets/photos/razer-basilisk-v3-1.jpg'
     },
     {
       id: 2,
@@ -94,7 +86,7 @@ export default function RazerRazerBasiliskV3() {
       price: '$69.99',
       monthlyPrice: '$5.83',
       finishes: ['Classic Black', 'Quartz Pink'],
-      image: basiliskv3_1
+      image: '/assets/photos/razer-basilisk-v3-1.jpg'
     },
     {
       id: 3,
@@ -115,7 +107,7 @@ export default function RazerRazerBasiliskV3() {
       price: '$69.99',
       monthlyPrice: '$5.83',
       finishes: ['Classic Black', 'Quartz Pink'],
-      image: basiliskv3_2
+      image: '/assets/photos/razer-basilisk-v3-2.jpg'
     }
   ];
 
@@ -129,7 +121,7 @@ export default function RazerRazerBasiliskV3() {
         '650 IPS / 50G acceleration',
         'Smart tracking & asymmetric cut-off'
       ],
-      image: FocusPlusSensor
+      image: '/assets/photos/razer-focus-plus-sensor.jpg'
     },
     {
       title: 'Razer Chroma RGB Lighting',
@@ -140,7 +132,7 @@ export default function RazerRazerBasiliskV3() {
         'Reactive lighting modes',
         'Syncs with other Razer devices'
       ],
-      image: ChromaRGB
+      image: '/assets/photos/razer-chroma-rgb.jpg'
     },
     {
       title: 'Razer Optical Mouse Switches Gen-3',
@@ -151,7 +143,7 @@ export default function RazerRazerBasiliskV3() {
         'Instant actuation',
         'Crisp tactile feedback'
       ],
-      image: OpticalSwitches
+      image: '/assets/photos/razer-optical-switches.jpg'
     },
     {
       title: 'Ergonomic Design & Customization',
@@ -162,7 +154,7 @@ export default function RazerRazerBasiliskV3() {
         'Razer Hypershift for secondary layers',
         'Onboard memory for profiles'
       ],
-      image: ErgonomicDesign
+      image: '/assets/photos/razer-basilisk-ergonomics.jpg'
     }
   ];
 
