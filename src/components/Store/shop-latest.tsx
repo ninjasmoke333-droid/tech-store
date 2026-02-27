@@ -72,7 +72,7 @@ const AppleStoreInspired = () => {
       price: 'From $399',
 
       gradient: 'linear-gradient(135deg, #1e1e1e 0%, #3a3a3a 100%)',
-      image: '/src/assets/photos/ipad-2026-1.jpg',
+      image: '/assets/photos/ipad-2026-1.jpg',
       link: '/apple/ipad', // Note: You might want to create an Apple Watch route
     },
     {
@@ -81,7 +81,7 @@ const AppleStoreInspired = () => {
       price: 'From $799',
 
       gradient: 'linear-gradient(135deg, #00509e 0%, #003d7a 100%)',
-      image: '/src/assets/photos/vivo-x300-1.jpg',
+      image: '/assets/photos/vivo-x300-1.jpg',
       link: '/vivo/x300-series',
     },
     {
@@ -90,7 +90,7 @@ const AppleStoreInspired = () => {
       price: 'From $999',
 
       gradient: 'linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%)',
-      image: '/src/assets/photos/rog-g14-1.jpg',
+      image: '/assets/photos/rog-g14-1.jpg',
       link: '/asus/rog-zephyrus',
     },
   ];
@@ -98,62 +98,62 @@ const AppleStoreInspired = () => {
   const categories = [
     {
       name: 'Mac',
-      image: '/src/assets/photos/macbook-1.png',
+      image: '/assets/photos/macbook-1.png',
       link: '/apple/mac',
     },
     {
       name: 'OnePlus 15',
-      image: '/src/assets/photos/op-15-2.jpg',
+      image: '/assets/photos/op-15-2.jpg',
       link: '/oneplus/oneplus15',
     },
     {
       name: 'Galaxy Tab S11',
-      image: '/src/assets/photos/tab-s11-1.jpg',
+      image: '/assets/photos/tab-s11-1.jpg',
       link: '/samsung/tabs11',
     },
     {
       name: 'Galaxy Watch 8',
-      image: '/src/assets/photos/galaxy-watch-8-1.jpg',
+      image: '/assets/photos/galaxy-watch-8-1.jpg',
       link: '/samsung/watch8',
     },
     {
       name: 'Smart Glasses',
-      image: '/src/assets/photos/smart-glasses-1.jpg',
+      image: '/assets/photos/smart-glasses-1.jpg',
       link: '/accessories/smartglasses',
     },
     {
       name: 'Vivo Pad 5 Pro',
-      image: '/src/assets/photos/vivo-pad-1.jpg',
+      image: '/assets/photos/vivo-pad-1.jpg',
       link: '/vivo/pad-5-pro',
     },
     {
       name: 'Vivo X300',
-      image: '/src/assets/photos/vivo-x300-3.jpg',
+      image: '/assets/photos/vivo-x300-3.jpg',
       link: '/vivo/x300-series',
     },
     {
       name: 'Xiaomi 17 Ultra',
-      image: '/src/assets/photos/xiaomi-17-ultra-1.jpg',
+      image: '/assets/photos/xiaomi-17-ultra-1.jpg',
       link: '/xiaomi/xiaomi-17-ultra',
     },
     {
       name: 'Rog Zephyrus G14/G15',
-      image: '/src/assets/photos/rog-g14-1.jpg',
+      image: '/assets/photos/rog-g14-1.jpg',
       link: '/asus/rog-zephyrus',
     },
     {
       name: 'Rog Phone 9',
-      image: '/src/assets/photos/rog-phone-9-1.jpg',
+      image: '/assets/photos/rog-phone-9-1.jpg',
       link: '/asus/rog-phone-9-pro',
     },
     {
       name: 'Razer Blade 18',
-      image: '/src/assets/photos/blade-18-1.png',
+      image: '/assets/photos/blade-18-1.png',
       link: '/razer/razerblade-18',
     },
     {
       name: 'Xiaomi Pad 7 Ultra',
-      image: '/src/assets/photos/xiaomi-pad-7-1.jpg',
+      image: '/assets/photos/xiaomi-pad-7-1.jpg',
       link: '/xiaomi/xiaomi-pad-7-ultra8',
     },
   ];

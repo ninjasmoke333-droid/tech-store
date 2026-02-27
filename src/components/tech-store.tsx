@@ -1333,18 +1333,17 @@ const TechStoreLanding: React.FC = () => {
       {/* Product Grid */}
       <section
         style={{
-          position: 'relative',
-          backgroundImage: `url('/assets/photos/smart-watch-photo-1.jpg') center/cover no-repeat`, 
-
-          color: '#ffffff',
-          minHeight: isMobile ? '600px' : '700px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          padding: isMobile ? '3rem 1rem' : '5rem 1rem',
-        }}
+  position: 'relative',
+  backgroundImage: `url('/assets/photos/smart-watch-photo-1.jpg') center / cover no-repeat`,
+  color: '#ffffff',
+  minHeight: isMobile ? '600px' : '700px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textAlign: 'center',
+  padding: isMobile ? '3rem 1rem' : '5rem 1rem',
+}}
       >
         {/* Overlay for better text readability */}
         <div
