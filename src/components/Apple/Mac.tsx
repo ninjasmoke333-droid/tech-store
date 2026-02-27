@@ -4,13 +4,7 @@ import Navbar from '../layout/navbar';
 import MobileMenu from '../layout/mobilemenu';
 import Footer from '../layout/footer';
 
-// Import product images
-import macbookM5 from '../../assets/photos/macbook-m5.jpg';
-import macbookM4 from '../../assets/photos/macbook-m4.jpg';
 
-// Import consideration images
-import m5ChipImage from '../../assets/photos/apple-m5.jpg';
-import m4ProChipImage from '../../assets/photos/apple-m4.jpg';
 
 import { useCart } from '../../context/CartContext';
 
@@ -73,7 +67,7 @@ export default function AppleMac() {
       price: '$1,599.00',
       monthlyPrice: '$133.25',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM5
+      image: '/assets/photos/macbook-m5.jpg'
     },
     {
       id: 2,
@@ -94,7 +88,7 @@ export default function AppleMac() {
       price: '$1,799.00',
       monthlyPrice: '$149.91',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM5
+      image: '/assets/photos/macbook-m5.jpg'
     },
     {
       id: 3,
@@ -115,7 +109,7 @@ export default function AppleMac() {
       price: '$1,999.00',
       monthlyPrice: '$166.58',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM5
+      image: '/assets/photos/macbook-m5.jpg'
     },
     {
       id: 4,
@@ -135,7 +129,7 @@ export default function AppleMac() {
       price: '$1,999.00',
       monthlyPrice: '$166.58',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM4
+      image: '/assets/photos/macbook-m4.jpg'
     },
     {
       id: 5,
@@ -155,7 +149,7 @@ export default function AppleMac() {
       price: '$2,399.00',
       monthlyPrice: '$199.91',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM4
+      image: '/assets/photos/macbook-m4.jpg'
     },
     {
       id: 6,
@@ -175,7 +169,7 @@ export default function AppleMac() {
       price: '$3,199.00',
       monthlyPrice: '$266.58',
       finishes: ['Space Black', 'Silver'],
-      image: macbookM4
+      image: '/assets/photos/macbook-m4.jpg'
     }
   ];
 
@@ -189,7 +183,7 @@ export default function AppleMac() {
         'Configure with up to 32GB unified memory',
         'Supports up to two external displays'
       ],
-      image: m5ChipImage
+      image: '/assets/photos/apple-m5.jpg'
     },
     {
       title: 'Apple M4 Pro chip',
@@ -200,7 +194,7 @@ export default function AppleMac() {
         'Configure with up to 48GB unified memory',
         'Supports up to two external displays'
       ],
-      image: m4ProChipImage
+      image: '/assets/photos/apple-m4.jpg'
     },
     {
       title: 'Apple M4 Max chip',
